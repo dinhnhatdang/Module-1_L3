@@ -229,6 +229,34 @@ namespace Module_1_L3
                 Console.WriteLine("Tổng là {0}", Tong);
             }
         Console.ReadKey(); */
+
+            // Bài 7: Viết chương trình nhập vào số nguyên n, tính tổng các số lẽ từ 1 đến n và hiển thị kết quả ra màn hình
+
+            /* int SoThuDuoc;
+            bool kiemtra;
+            do
+            {
+                Console.WriteLine("Nhập vào số nguyên dương: ");
+                string a = (Console.ReadLine());
+                kiemtra = int.TryParse(a, out SoThuDuoc);
+            }
+            while (!kiemtra);
+
+            if (SoThuDuoc <= 0)
+            {
+                Console.WriteLine("Nhập số > 0 đi bạn!");
+            }
+            else
+            {
+                double Tong = 0;
+                for (int i = 1; i <= SoThuDuoc; i++)
+                {
+                    if (i % 2 != 0)
+                        Tong = Tong + i;
+                }
+                Console.WriteLine("Tổng các số lẻ từ 1 đển {0} là {1}",SoThuDuoc, Tong);
+            }
+            Console.ReadKey(); */
         }
     }
 }
