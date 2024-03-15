@@ -257,6 +257,34 @@ namespace Module_1_L3
                 Console.WriteLine("Tổng các số lẻ từ 1 đển {0} là {1}",SoThuDuoc, Tong);
             }
             Console.ReadKey(); */
+
+            // Bài 8: Nhập vào số nguyên dương n, hiển thị ra màn hình các số nguyên tố từ 1 đến n.
+
+           int SoThuDuoc;
+           bool kiemtra;
+           do
+           {
+               Console.WriteLine("Nhập vào số nguyên dương: ");
+               string a = (Console.ReadLine());
+               kiemtra = int.TryParse(a, out SoThuDuoc);
+           }
+           while (!kiemtra);
+
+           if (SoThuDuoc <= 2)
+           {
+               Console.WriteLine("Không có số nguyên tố nào cả");
+           }
+           else
+           {
+               for (int i = 1; i <= SoThuDuoc; i++)
+               {
+                   if (i % 2 != 0)
+                       Tong = Tong + i;
+               }
+               Console.WriteLine("Tổng các số lẻ từ 1 đển {0} là {1}",SoThuDuoc, Tong);
+           }
+           Console.ReadKey();
+
         }
     }
 }
